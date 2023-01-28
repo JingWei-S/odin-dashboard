@@ -16,6 +16,31 @@ body {
 .phd-info {
     grid-column: 2 / 3;
     background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+}
+
+/* the top phd info bar */
+.icon-wrapper {
+    display: flex;
+    margin: 1.5em;
+}
+
+input[type="text"] {
+    width: 40em;
+    height: 1.8em;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-left: 1em;
+    box-sizing: border-box;
+    padding: 0.5em;
+    font-size: 14px;
+}
+
+.right-to-search {
+    margin-left: auto;
+    display: flex;
+    gap: 1em;
 }
 
 .nav {

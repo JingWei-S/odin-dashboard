@@ -3,13 +3,14 @@ body {
     /* height: 100vh; */
     margin: 0;
     padding: 0;
-    /* height: 100vh; */
-    /* weighth: 100vw; */
+    /* min-height: 100vh; */
+    
 }
 
 .container {
     display: grid;
     min-height: 100vh;
+    min-width: 100vw;
     grid-template-columns: minmax(250px, 1fr) 4.5fr;
     grid-template-rows: minmax(180px, 1fr) 4fr;
     background-color: #f8fafc;
@@ -36,6 +37,7 @@ input[type="text"] {
     height: 1.8em;
     border: 1px solid lightgray;
     border-radius: 8px;
+    background-color: #f8fafc;
     margin-left: 1em;
     box-sizing: border-box;
     padding: 0.5em;
@@ -62,12 +64,11 @@ input[type="text"] {
 
 .right-to-search img+img {
     border-radius: 50%;
-    border: 1px solid #334155;
 }
 
 .bottom-wrapper {
     display: flex;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 .nav {
@@ -106,6 +107,7 @@ input[type="text"] {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1.8fr 1fr;
+    background-color: #f8fafc;
 }
 
 .project-wrapper {
@@ -178,6 +180,7 @@ input[type="text"] {
     padding: 0.8em;
     display: grid;
     justify-content: space-between;
+    grid-template-columns: minmax(200px, 1fr);
 }
 
 .trending {
@@ -214,11 +217,15 @@ input[type="text"] {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
 }
 
 .other-project > img {
     grid-row: 1 / 3;
-    height: 1.2fr;
+    width: 3.5em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 .other-project > p {
@@ -235,10 +242,12 @@ input[type="text"] {
     font-weight: bold;
     color: #334155;
     align-self: end;
+    margin-bottom: 0.25em;
 }
 
 .other-project > p:last-child {
     color: #94a3b8;
+    margin-bottom: 0.5em;
 }
 
 /* This selector is to change the svg color */
@@ -266,7 +275,6 @@ input[type="text"] {
     width: 60px;
     margin-left: 2em;
     margin-right: 1.5em;
-    border: 1px solid #334155;
     border-radius: 50%;
 }
 

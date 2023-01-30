@@ -11,7 +11,7 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: minmax(250px, 1fr) 4.5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: minmax(180px, 1fr) 4fr;
     background-color: #f8fafc;
     margin: 0;
 }
@@ -21,16 +21,18 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
+    box-shadow: 3px 3px 5px #e5e7eb;
 }
 
 /* the top phd info bar */
 .icon-wrapper {
     display: flex;
     margin: 1.5em;
+    align-items: center;
 }
 
 input[type="text"] {
-    width: 40em;
+    width: 45em;
     height: 1.8em;
     border: 1px solid lightgray;
     border-radius: 8px;
@@ -42,13 +44,30 @@ input[type="text"] {
 
 .right-to-search {
     margin-left: auto;
+    margin-right: 2em;
     display: flex;
     gap: 1em;
+    align-items: center;
+}
+
+.right-to-search a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: bold;
+}
+
+.right-to-search img {
+    width: calc(1.8 * 1em);
+}
+
+.right-to-search img+img {
+    border-radius: 50%;
+    border: 1px solid #334155;
 }
 
 .bottom-wrapper {
     display: flex;
-    margin-bottom: 0;
+    margin-top: 2em;
 }
 
 .nav {
@@ -227,4 +246,53 @@ input[type="text"] {
     width: calc(1.6 * 1em);
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     margin-top: 0.2em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search img {
+    width: calc(1.6 *1em);
+}
+
+.greeting-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.greeting-wrapper img {
+    width: 60px;
+    margin-left: 2em;
+    margin-right: 1.5em;
+    border: 1px solid #334155;
+    border-radius: 50%;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 1em;
+    margin: auto 3em 1em auto;
+}
+
+button {
+    border: none;
+    background-color: #4b5563;
+    border-radius: 16px;
+    font-size: 16px;
+    color: white;
+    padding: 8px 24px;
+}
+
+.greeting > p:first-child {
+    font-size: 12px;
+    font-weight: bolder;
+    /* margin-bottom: 0; */
+}
+
+.greeting > p+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
 }

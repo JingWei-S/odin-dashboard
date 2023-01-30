@@ -201,13 +201,15 @@ input[type="text"] {
 }
 
 .announcements > div > p:first-child {
-    margin-bottom: 0;
+    margin-bottom: 0.1em;
     margin-top: 0.5em;
+    font-weight: bold;
 }
 
 .announcements > div > p:nth-child(2) {
     margin-top: 0;
     margin-bottom: 0.6em;
+    color: #4b5563;
 }
 
 .other-project {
